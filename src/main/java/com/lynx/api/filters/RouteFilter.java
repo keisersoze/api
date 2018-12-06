@@ -7,10 +7,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.netflix.zuul.filters.ProxyRequestHelper;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import java.net.URL;
 
+@Component
 public class RouteFilter extends ZuulFilter {
 
     private static Logger log = LoggerFactory.getLogger(RouteFilter.class);

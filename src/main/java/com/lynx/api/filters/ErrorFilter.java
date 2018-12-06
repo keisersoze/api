@@ -1,7 +1,10 @@
 package com.lynx.api.filters;
 
+import org.springframework.stereotype.Component;
+
 import com.netflix.zuul.ZuulFilter;
 
+@Component
 public class ErrorFilter extends ZuulFilter {
 
     @Override

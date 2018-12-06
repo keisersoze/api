@@ -2,9 +2,11 @@ package com.lynx.api.filters;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import com.netflix.zuul.ZuulFilter;
 
+@Component
 public class PostFilter extends ZuulFilter {
 
     private static Logger log = LoggerFactory.getLogger(PostFilter.class);
