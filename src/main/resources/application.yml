@@ -1,6 +1,7 @@
 zuul:
   routes:
     auth:
+      path: /api/auth/**
       url: http://localhost:8080
       sensitiveHeaders: Cookie,Set-Cookie
 
