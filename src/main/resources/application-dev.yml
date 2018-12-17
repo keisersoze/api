@@ -4,6 +4,10 @@ zuul:
       path: /api/auth/**
       url: http://auth.88-dev-int.svc:8080
       sensitiveHeaders: Cookie,Set-Cookie
+    ui:
+      path: /**
+      url: http://ui.88-dev-int.svc:8080
+      sensitiveHeaders: Cookie,Set-Cookie
 
 server:
   port: 8070

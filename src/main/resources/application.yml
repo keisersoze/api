@@ -4,6 +4,5 @@ zuul:
       path: /api/auth/**
       url: http://localhost:8080
       sensitiveHeaders: Cookie,Set-Cookie
-
 server:
   port: 8070
